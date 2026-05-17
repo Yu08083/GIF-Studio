@@ -1,0 +1,57 @@
+.progress-container {
+    margin-top: 24px;
+    padding: 18px;
+    background: var(--card);
+    border-radius: var(--radius);
+    border: 1px solid var(--border-bright);
+}
+
+.progress-label {
+    margin: 0 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text);
+    font-size: 0.95rem;
+    font-variant-numeric: tabular-nums;
+}
+
+progress {
+    width: 100%;
+    height: 8px;
+    border: none;
+    border-radius: 999px;
+    overflow: hidden;
+    background: var(--bg);
+    appearance: none;
+}
+
+progress::-webkit-progress-bar {
+    background: var(--bg);
+    border-radius: 999px;
+}
+
+progress::-webkit-progress-value {
+    background: linear-gradient(90deg, var(--blurple), #7983f5);
+    border-radius: 999px;
+    transition: width 0.2s ease;
+}
+
+progress::-moz-progress-bar {
+    background: var(--blurple);
+    border-radius: 999px;
+}
+
+.status-message {
+    margin-top: 16px;
+    text-align: center;
+    min-height: 1.4em;
+    color: var(--text-muted);
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.status-message.info    { color: var(--text-muted); }
+.status-message.success { color: var(--green); }
+.status-message.warning { color: var(--yellow); }
+.status-message.error   { color: var(--red); }

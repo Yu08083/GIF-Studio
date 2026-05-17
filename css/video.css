@@ -1,0 +1,121 @@
+.video-editor {
+    margin-top: 24px;
+    padding: 20px;
+    background: var(--card);
+    border-radius: var(--radius);
+    border: 1px solid var(--border-bright);
+}
+
+.video-preview {
+    display: block;
+    width: 100%;
+    max-height: 380px;
+    background: #000;
+    border-radius: var(--radius);
+    margin-bottom: 18px;
+}
+
+.section-title {
+    margin: 0 0 14px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--text-soft);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.trim-controls,
+.settings-grid {
+    padding: 18px;
+    background: var(--bg);
+    border-radius: var(--radius);
+    margin-bottom: 14px;
+}
+
+.settings-grid:last-child { margin-bottom: 0; }
+
+.trim-row {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 14px;
+}
+
+.trim-row:last-child { margin-bottom: 0; }
+
+.trim-row label {
+    color: var(--text);
+    font-size: 0.92rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trim-row label .value {
+    color: var(--blurple);
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    background: var(--blurple-soft);
+    padding: 2px 10px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+}
+
+.duration-info {
+    margin: 14px 0 0;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.duration-info strong {
+    color: var(--blurple);
+    font-size: 1.15rem;
+    font-variant-numeric: tabular-nums;
+}
+
+.settings-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-bottom: 14px;
+}
+
+.setting-item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.setting-item label {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.setting-item label small {
+    color: var(--text-soft);
+    font-weight: 400;
+}
+
+.setting-item.checkbox {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 6px;
+}
+
+.setting-item.checkbox label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text);
+    font-size: 0.92rem;
+    cursor: pointer;
+}
+
+.setting-item.checkbox input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--blurple);
+    cursor: pointer;
+}
